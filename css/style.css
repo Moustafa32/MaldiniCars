@@ -1,0 +1,225 @@
+body
+{
+    overflow-x: hidden;
+    background-color: #0F2027;
+    padding-left: .4px;
+}
+.font-color
+{
+    color: turquoise;
+}
+a:hover
+{
+    color: lightseagreen;
+}
+.carousel-item
+{
+    height: 560px;
+}
+.clientLogo
+{
+    margin-top: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 80px;
+    width: 100px;
+    
+   
+}
+.turquoiseLine
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid turquoise;
+}
+.bmwSection,.lamborghiniSection,.mercedesSection,.opelSection,.porscheSection,.kiaSection
+{
+    display: none;
+}
+.carImg
+{
+    width: 650px;
+    height: 540px;
+   
+}
+.carDetails
+{
+    font-size: xx-large; 
+}
+.upBotton
+{
+    width:35x;
+    height: 40px;
+    font-size: x-large;
+    color: turquoise;
+    background-color: darkslategray;
+    border-radius: 50%;
+    border: 2px solid turquoise;
+    position: fixed;
+    right:20px;
+    bottom: 10px;
+    display:none;
+    z-index: 99;
+}
+.upBotton:hover
+{
+    background-color: teal;
+}
+.carName
+{
+    color:lightseagreen;
+    font-size: xx-large;
+    font-style: italic;
+}
+.carProp
+{
+    font-size: large;
+    color: lightseagreen;
+}
+
+.fa
+{
+  padding: 13px;
+  width: 50px;
+  height: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60%;
+  margin: 25px;
+  
+}
+.fa::before
+{
+    font-size: 30px;
+    text-align: center;
+}
+.fa:hover {
+    opacity: 0.3;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+    background: #DC143C;
+    color: white;
+  }
+ .footerDiv
+ {
+     margin-left: 40px;
+     padding: 20px;
+     font-size: medium;
+ }
+ a
+ {
+     color: mediumturquoise;
+ }
+.endPage
+{
+    background-color: #212529;
+}
+.endPage1
+{
+    background-color: black;
+}
+.endPage2
+{
+    margin-left: 20px;
+}
+.loginButton,.registerButton
+{
+   
+    margin: 4px;
+    background-color: #212529;
+    color: turquoise;
+}
+.navBarOpacity
+{
+    opacity: .5;
+    height: 55px;
+}
+.modal-content
+{
+    background-color:  #212529;
+    opacity: .8;
+}
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus,input[type=email]:focus, input[type=date] {
+    background-color: #ddd;
+    outline: none;
+    border: 2px solid turquoise;
+  }
+  
+.commingSoon
+{
+    width: 100%;
+    height: 50px;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: cursive;
+    background-color: black;
+    color: turquoise;
+    font-weight: bolder;
+    text-align: center;
+    -webkit-animation: commingSoon 1s ease-in-out infinite alternate;
+    -moz-animation: commingSoon 1s ease-in-out infinite alternate;
+    animation: commingSoon 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes commingSoon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  .newCarDiv
+{
+    background-color: black;
+    width:550px;
+    height:550px;
+    margin: 30px;
+    margin-left: 40px;
+    border: 2px solid turquoise;
+}
+.videoCar
+{
+    width: 530px;
+    height: 480px;
+    margin-left: 6px;
+}
+
+::-webkit-scrollbar 
+{
+    width: 18px;
+}
+::-webkit-scrollbar-track 
+{
+    box-shadow: inset 0 0 5px black; 
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb 
+{
+    background: teal; 
+    border-radius:40px;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+    background: turquoise; 
+}

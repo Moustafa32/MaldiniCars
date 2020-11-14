@@ -1,0 +1,96 @@
+$(document).ready(function()
+{
+    $(".clientLogo").on("mouseenter ",function()
+        {
+            $(this).animate(
+                {
+                   height:150,
+                   width:190
+                },10);
+        }
+    );
+    $(".clientLogo").on("mouseleave ",function()
+        {
+            $(this).animate(
+                {
+                   height:80,
+                   width:120
+                },10);
+        }
+    );
+    $("#bmwLogo").on("click",function()
+    {
+        $(".lamborghiniSection").fadeOut(); 
+        $(".mercedesSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").fadeOut();          
+        $(".bmwSection").slideDown();        
+    });
+    $("#lamborghiniLogo").on("click",function()
+    {
+        $(".bmwSection").fadeOut();
+        $(".mercedesSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").fadeOut();
+        $(".lamborghiniSection").slideDown();
+    });
+    $("#mercedesLogo").on("click",function()
+    {
+        $(".bmwSection").fadeOut();         
+        $(".lamborghiniSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").fadeOut(); 
+        $(".mercedesSection").slideDown()       
+    });
+    $("#opelLogo").on("click",function()
+    {
+        $(".bmwSection").fadeOut();         
+        $(".lamborghiniSection").fadeOut();
+        $(".mercedesSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").fadeOut(); 
+        $(".opelSection").slideDown()       
+    });
+    $("#porscheLogo").on("click",function()
+    {
+        $(".bmwSection").fadeOut();         
+        $(".lamborghiniSection").fadeOut();
+        $(".mercedesSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".kiaSection").fadeOut();
+        $(".porscheSection").slideDown()       
+    });
+    $("#kiaLogo").on("click",function()
+    {
+        $(".bmwSection").fadeOut();         
+        $(".lamborghiniSection").fadeOut();
+        $(".mercedesSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").slideDown();      
+    });
+    $(window).on("scroll",function()
+    {
+      var sc=$(window).scrollTop();
+      if(sc>0)
+     {$(".upBotton").fadeIn(1);}
+     else
+     {$(".upBotton").fadeOut(1);}
+    });
+    $(".upBotton").click(function() {    
+        $("html").animate({ 
+            scrollTop: 0 
+        }, "fast");
+        $(".bmwSection").fadeOut();         
+        $(".lamborghiniSection").fadeOut();
+        $(".mercedesSection").fadeOut();
+        $(".opelSection").fadeOut();
+        $(".porscheSection").fadeOut(); 
+        $(".kiaSection").fadeOut();
+    });
+
+    
+});
